@@ -25,11 +25,9 @@ sudo apt install -y nitrogen
 mkdir -p ~/.config/i3/ ~/.config/i3blocks/ ~/.config/kitty/ ~/.config/picom/
 
 # Copy config files
-cp -r ./i3 ~/.config/i3/
-cp -r ./i3blocks ~/.config/i3blocks/
-cp -r ./kitty ~/.config/kitty/
-cp -r ./picom ~/.config/picom/
+cp -r ./i3/* ~/.config/i3/
+cp -r ./i3blocks/* ~/.config/i3blocks/
+cp -r ./kitty/* ~/.config/kitty/
+cp -r ./picom/* ~/.config/picom/
 
-echo "Installation complete, rebooting now"
-sudo shutdown -r +0.05
-
+echo "Installation complete"
