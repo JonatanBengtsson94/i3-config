@@ -19,7 +19,16 @@ sudo apt install -y picom
 # Background setter
 sudo apt install -y nitrogen
 
+# utils
+sudo apt install -y curl
+
 ## Customization
+
+# Fonts
+curl -OL https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Meslo.tar.xz
+mkdir -p ~/.local/share/fonts/
+tar -xf Meslo.tar.xz
+mv *.ttf ~/.local/share/fonts/
 
 # Create config dirs
 mkdir -p ~/.config/i3/ ~/.config/i3blocks/ ~/.config/kitty/ ~/.config/picom/
