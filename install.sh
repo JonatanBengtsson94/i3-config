@@ -6,6 +6,8 @@ sudo apt update
 
 # Display server
 sudo apt install -y xorg
+touch ~/.bash_profile
+echo "exec startx" > ~/.bash_profile
 
 # Window manager
 sudo apt install -y i3 i3blocks
