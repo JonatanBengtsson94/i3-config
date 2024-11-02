@@ -1,0 +1,27 @@
+configuration {
+  display-drun: "";
+  drun-display-format: "{icon} {name}";
+  show-icons: true;
+}
+
+@theme "/dev/null"
+
+* {
+  bg: #523d6499;
+  bg-hl: #000000;
+
+  background-color: @bg; 
+  text-color: #FFFFFF;
+}
+
+listview {
+  lines: 4;
+}
+
+element selected.active {
+  background-color: @bg-hl;
+}
+
+element selected.normal {
+  background-color: @bg-hl;
+}
