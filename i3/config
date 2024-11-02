@@ -143,7 +143,7 @@ set $ws2 "2:  Browser"
 set $ws3 "3:  Communication"
 set $ws4 "4:  Music"
 set $ws5 "5:  Virtualization"
-set $ws6 "6"
+set $ws6 "6:  Passwords"
 set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
@@ -178,6 +178,7 @@ for_window [class="firefox"] move to workspace $ws2
 for_window [class="discord"] move to workspace $ws3
 for_window [class="Spotify"] move to workspace $ws4
 for_window [class="Virt-manager"] move to workspace $ws5
+for_window [class="KeePassXC"] move to workspace $ws6
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
