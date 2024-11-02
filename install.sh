@@ -53,8 +53,22 @@ sudo apt install -y picom
 # Background setter
 sudo apt install -y nitrogen
 
-# utils
+# Utils
 sudo apt install -y curl ufw
+
+# Editor
+# Prerequisites for neovim
+sudo apt-get install ninja-build gettext cmake unzip curl build-essential
+# neovim
+git clone https://github.com/neovim/neovim
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+cd ..
+
+# File manager
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup update
+cargo install --locked yazi-fm yazi-cli
 
 # Optional packages
 if [ "$install_audio" = true ]; then
@@ -78,13 +92,15 @@ tar -xf Meslo.tar.xz
 mv *.ttf ~/.local/share/fonts/
 
 # Create config dirs
-mkdir -p ~/.config/i3/ ~/.config/i3blocks/ ~/.config/kitty/ ~/.config/picom/
+mkdir -p ~/.config/i3/ ~/.config/i3blocks/ ~/.config/kitty/ ~/.config/picom/ ~/.config/rofi/ ~/.config/nvim/
 
 # Copy config files
 cp -r ./i3/* ~/.config/i3/
 cp -r ./i3blocks/* ~/.config/i3blocks/
 cp -r ./kitty/* ~/.config/kitty/
 cp -r ./picom/* ~/.config/picom/
+cp -r ./rofi/* ~/.config/rofi/
+cp -r ./nvim/* ~/.config/nvim/
 cp .bashrc ~/.bashrc
 
 echo "Installation complete"
