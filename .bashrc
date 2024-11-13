@@ -92,6 +92,26 @@ fi
 #alias la='ls -A'
 #alias l='ls -CF'
 
+# Aliases
+# File and directories
+alias ll='ls -l'
+alias la='ls -A'
+alias ..='cd ..'
+
+# Git commands
+alias gs='git status'
+alias ga='git add'
+alias gcm='git commit -m'
+alias gp='git push'
+alias gpl='git pull'
+alias gb='git branch'
+alias gd='git diff'
+alias gco='git checkout'
+
+# Applications
+alias vim='nvim'
+alias yy='yazi'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -111,3 +131,4 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+export EDITOR=nvim

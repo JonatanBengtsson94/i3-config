@@ -66,9 +66,11 @@ sudo make install
 cd ..
 
 # File manager
+# Prerequisites for yazi
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup update
+# yazi
 cargo install --locked yazi-fm yazi-cli
 
 # Optional packages
