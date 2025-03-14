@@ -54,7 +54,7 @@ sudo apt install -y picom
 sudo apt install -y nitrogen
 
 # Utils
-sudo apt install -y curl ufw
+sudo apt install -y curl ufw ripgrep
 
 # Editor
 # Prerequisites for neovim

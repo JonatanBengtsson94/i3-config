@@ -14,6 +14,7 @@ return {
 		--keymaps
 		local keymap = vim.keymap
 		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
+		keymap.set("n", "<leader>ft", "<cmd>Telescope live_grep<cr>")
 
 		telescope.setup({
 			defaults = {
